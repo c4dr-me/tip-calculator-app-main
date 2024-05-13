@@ -264,8 +264,8 @@ input[type=number] {
 }
 
 .perHead {
-  color: hsl(0, 0%, 100%);
-  font-weight: 400;
+  color: hsl(185, 41%, 84%);
+  font-weight: 700;
   padding: 0 0 0.2rem 0.5rem;
   font-size: 0.8rem;
 }
