@@ -48,12 +48,12 @@ span, input, label {
 }
 
 .left {
-  flex-basis: 50%;
+  width: 50%;
 }
 
 .right {
   display: flex;
-  flex-basis: 53%;
+  width: 50%;
   background-color: hsl(183, 100%, 15%);
   border-radius: 1em;
   flex-direction: column;
@@ -298,9 +298,18 @@ input[type=number] {
     max-width: calc(100vw - 36%);
   }
 }
-@media (max-width: 768px) {
+@media (min-width: 500px) and (max-width: 768px) {
   article {
-    max-width: calc(100vw - 13%);
+    flex-direction: column;
+    max-width: calc(100vw - 30%);
+    margin-bottom: 2rem;
+  }
+  .logo {
+    margin-top: 1rem;
+  }
+  .right, .left {
+    height: 50%;
+    width: 100%;
   }
 }
 @media (max-width: 500px) {
@@ -311,6 +320,10 @@ input[type=number] {
   }
   .logo {
     margin-top: 1rem;
+  }
+  .right, .left {
+    height: 50%;
+    width: 100%;
   }
 }
 @media (max-width: 320px) {
